@@ -1,0 +1,132 @@
+<html>
+    <!-- Метаинформация - невидимая для пользователя -->
+    <head>
+        <!-- Заголовок вкладки браузера -->
+        <title> Soul Knight </title>
+
+        <!-- Прикрепление внешних стилей и скриптов -->
+        <link rel="stylesheet" href="./style.css">
+        <link rel="javascript" href="./script.js">
+
+        <!-- Внутренние скрипты и стили (в самом HTML) -->
+        <script>
+            function openDrawer() {
+                const nav = document.getElementsByTagName("nav");
+                    //   0  ,  1  ,  2
+                    // ["id", "id", "id"]
+                nav[0].toggleAttribute(ariaExpanded);
+            }
+
+
+            function update() {
+                return fetch("https://url.url/api/v2/getMyData")
+            }
+
+
+            onload(() => {
+                const main = document.getElementsByTagName("main");
+                main[0].innerHTML = update();
+            })
+        </script>
+
+        <!--
+            ПОДКЛЮЧЕНИЕ CSS В СЛУЧАЕ, ЕСЛИ У ВАС ПО КАКОЙ-ЛИБО ПРИЧИНЕ
+            ЭТО НЕ ПОЛУЧАЕТСЯ В ОТДЕЛЬНОМ ФАЙЛЕ
+        -->
+        <style>
+            /* Наш CSS код */
+            p {
+                
+                color: #00ff26;
+                padding: 15px;
+                margin: 15px;
+                background-color: #0062ea;
+                border: 4px double rgb(127, 127, 127);
+            }
+            z { 
+            color: #ff0000;
+            padding: 15px;
+                margin: 15px;
+                background-color: #001ddb;
+
+            
+            } 
+            a {
+            background-color: #d10000;
+             border: 4px double rgb(0, 0, 0);
+             margin: 100px;
+            }
+        </style>
+    </head>
+
+
+
+<!-- Весь сайт -->
+    <body>
+
+
+        <!-- Навигация по сайту - РАЗМЕТКА -->
+        <nav>
+            <!-- Список -->
+            <ul>
+                <!-- Элементы списка -->
+                <li>
+                    <!-- Ссылка на раздел сайта -->
+                    <a href="ССЫЛКА">https://soulknight.chillyroom.com/</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <!-- Заголовок (шапка) сайта - РАЗМЕТКА -->
+        <header>
+            <!-- Кнопка для открытия панели навигации -->
+            <button onclick={openDrawer()}>Открыть панель навигации</button>
+
+            <!-- Картинка -->
+            
+      
+        </header>
+
+
+        <!-- Основной контент сайта - РАЗМЕТКА -->
+        <main>
+            <!-- Заголовок страницы -->
+            <h1>
+                Soul Knight
+            </h1>
+            <!-- Обёртка всех остальных элементов -->
+            <div>
+                <!-- Что угодно -->
+            </div>
+        </main>
+
+
+
+        <!-- Подвал сайта - РАЗМЕТКА -->
+        <footer>
+            <!-- Параграф текста -->
+            <p>
+                 — это популярная мобильная игра в жанрах roguelite и bullet hell с пиксельной графикой, разработанная китайской студией ChillyRoom и выпущенная в феврале 2017 года. Сюжет строится вокруг похищения магического камня высокотехнологичными инопланетянами, из-за чего баланс мира оказался под угрозой.
+            </p>
+            
+         <img src="https://www.google.com/imgres?q=Soul%20Knight&imgurl=https%3A%2F%2Fi.namu.wiki%2Fi%2F1OC_JFipbhtxep_bsB01mgoWubFZmYkj0KSOEjp0ozBHVSl-guIFRoS-LczY3ImtiFRHVRf0ppwK5S47kYcjVA.png&imgrefurl=https%3A%2F%2Fen.namu.wiki%2Fw%2F%25EA%25B8%25B0%25EC%2582%25AC(%25EC%2586%258C%25EC%259A%25B8%2520%25EB%2582%2598%25EC%259D%25B4%25ED%258A%25B8)&docid=Z8nY-Vk_Ut610M&tbnid=KT7fschYXYRiUM&vet=12ahUKEwjtm6DD6LiUAxU5RPEDHfERJiM4FBCc8A56BAgHEAE..i&w=240&h=240&hcb=2&ved=2ahUKEwjtm6DD6LiUAxU5RPEDHfERJiM4FBCc8A56BAgHEAE align="left" alt="Migo"
+width="100" vspace="5" draggable="false">
+            <z>    
+             Ключевые особенности геймплея
+            </z>
+             <p>
+            Случайная генерация: уровни и подземелья создаются заново при каждом заходе.
+            </p>
+            <p>
+            Огромный арсенал: игрокам доступно более сотни видов оружия, от луков и мечей до лазеров и ракетниц.
+            </p>
+             <p>
+             Динамичные бои: игровой процесс требует постоянного уклонения от плотных потоков вражеских снарядов
+             </p>
+        </footer>
+    </body>
+<!-- Весь сайт -->
+</html>
+
+ 
